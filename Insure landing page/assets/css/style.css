@@ -50,7 +50,7 @@ h4 {
   font-size: .8em;
   font-weight: 700;
   letter-spacing: 1px;
-  z-index: 99;
+  z-index: 10;
 }
 
 .btn-primary {
