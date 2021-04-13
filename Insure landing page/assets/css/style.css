@@ -49,6 +49,7 @@ h4 {
   font-size: .8em;
   font-weight: 700;
   letter-spacing: 1px;
+  z-index: 99;
 }
 
 .btn-primary {
@@ -206,7 +207,6 @@ h4 {
 .pattern-left {
   left: 0;
   top: 70%;
-  z-index: 1;
 }
 
 .pattern-right {
