@@ -43,6 +43,7 @@ h4 {
 }
 
 .btn {
+  position: relative;
   padding: 10px 25px !important;
   text-transform: uppercase;
   text-decoration: none;
