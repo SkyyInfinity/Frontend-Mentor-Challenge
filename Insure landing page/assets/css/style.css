@@ -206,6 +206,7 @@ h4 {
 .pattern-left {
   left: 0;
   top: 70%;
+  z-index: 1;
 }
 
 .pattern-right {
