@@ -43,12 +43,14 @@ h4 {
 }
 
 .btn {
+  position: relative;
   padding: 10px 25px !important;
   text-transform: uppercase;
   text-decoration: none;
   font-size: .8em;
   font-weight: 700;
   letter-spacing: 1px;
+  z-index: 10;
 }
 
 .btn-primary {
