@@ -1,0 +1,31 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+
+#l-header {
+   padding: 3em 0;
+   @include primary-gradient(true);
+   background-position: center left;
+   background-repeat: no-repeat;
+   color: white;
+   border-radius: 0 0 0 100px;
+}
+.head {
+   padding: 10em 0;
+   text-align: center;
+}
+.head .head-title {
+   font-family: $font1;
+   font-size: 4.5em;
+   font-weight: 700;
+}
+.head .head-text {
+   font-size: 1.3em;
+   font-weight: 400;
+}
+.head .head-btn {
+   margin: 50px 0;
+}
+.head .head-btn button {
+   margin: 0 10px;
+}

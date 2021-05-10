@@ -1,0 +1,30 @@
+/* ===========================
+   Mixins
+   =========================== */
+
+@mixin primary-gradient($background-image) {
+    @if $background-image {
+        background-image: url('../img/bg-pattern-intro.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    } @else {
+        background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+}
+@mixin secondary-gradient {
+    background-image: linear-gradient(to left, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+}
+@mixin flexbox($justify-content, $align-items, $flex-direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    @if $flex-direction {
+        @if $flex-direction == column {
+            flex-direction: column;
+        } @else if $flex-direction == column-reverse {
+            flex-direction: column-reverse;
+        } @else if $flex-direction == row {
+            flex-direction: row;
+        } @else if $flex-direction == row-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}

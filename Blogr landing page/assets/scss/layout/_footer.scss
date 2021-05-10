@@ -1,0 +1,50 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+#l-footer {
+   padding: 3em 0;
+   background-color: $very-dark-black-blue;
+   color: white;
+   border-radius: 0 100px 0 0;
+}
+.footer-columns {
+   @include flexbox(space-between, start, false);
+   margin-bottom: 5em;
+}
+.footer-columns .column {
+   width: 25%;
+}
+.footer-columns .column:not(.logo-col) {
+   margin-top: 1em;
+}
+.footer-columns .column h4.footer-title {
+   font-weight: bold;
+   margin-bottom: 2em;
+}
+.footer-columns .column ul li {
+   margin: 0.8em 0;
+}
+.footer-columns .column ul li a {
+   color: $grayish-blue;
+}
+.footer-columns .column ul li a:hover {
+   text-decoration: underline;
+}
+.attribution {
+   margin: 15px 0;
+   padding: 15px 0;
+   background-color: #19191f;
+   color: #f1f1f1;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: .8em;
+}
+.attribution a {
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+}
+.attribution a:hover {
+   text-decoration: underline;
+}

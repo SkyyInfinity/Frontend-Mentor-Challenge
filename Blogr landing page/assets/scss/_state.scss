@@ -1,0 +1,25 @@
+/* ==|====================
+   State
+   ======================= */
+
+.l-nav-responsive .menu.is-active {
+   transform: translate3d(-50%, 0, 0) scale(1);
+   opacity: 1;
+}
+.hamburger.is-active .bar-top {
+   top: 50%;
+   left: 50%;
+   transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+}
+.hamburger.is-active .bar-middle {
+   top: 50%;
+   left: 50%;
+   transform: translate3d(-50%, -50%, 0);
+   opacity: 1;
+   width: 0;
+}
+.hamburger.is-active .bar-bottom {
+   top: 50%;
+   left: 50%;
+   transform: translate3d(-50%, -50%, 0) rotate(45deg);
+}

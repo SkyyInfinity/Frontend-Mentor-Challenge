@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Fonts
+$font1: 'Overpass', Helvetica, Arial, sans-serif;
+$font2: 'Ubuntu', Helvetica, Arial, sans-serif;
+$defaultSize: 16px;
+
+// = Colors
+// -----------------------------
+
+// Primary
+$light-red: hsl(356, 100%, 66%); //(CTA text)
+$very-light-red: hsl(355, 100%, 74%); //(CTA hover background)
+$very-dark-blue: hsl(208, 49%, 24%); //(headings)
+
+// Neutral
+$grayish-blue: hsl(240, 2%, 79%); //(footer text)
+$very-dark-grayish-blue: hsl(207, 13%, 34%); //(body copy)
+$very-dark-black-blue: hsl(240, 10%, 16%); //(footer background)
+
+//basic
+$page-color: #ffffff;
+$red: #df2e30;
+$blue: #1894c4;
+$facebook: #3b5998;
+$twitter: #43bfe1;
+
+// = Transitions
+// -------------------------------
+$duration: 0.5s;
+$cubicBezier: cubic-bezier(0.175, 0.885, 0.32, 1);
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: 1440px;

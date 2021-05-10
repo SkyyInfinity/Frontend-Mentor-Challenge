@@ -1,0 +1,191 @@
+/* ==|====================
+   Layout/Nav
+   ======================= */
+
+/*__ Layout-Nav-Desktop __*/
+.l-nav-desktop,
+.l-nav-desktop ul {
+   @include flexbox(space-between, center, false);
+}
+.l-nav-desktop ul li {
+   position: relative;
+   margin: 0 .5em;
+}
+.l-nav-desktop ul li ul.dropdown {
+   width: 170px;
+   padding: 10px;
+   position: absolute;
+   top: 200%;
+   left: -20%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, .2);
+   opacity: 0;
+   transform: translateY(-15%);
+   visibility: hidden;
+   transition: all $duration $cubicBezier;
+}
+.l-nav-desktop ul li ul.dropdown li {
+   line-height: 2;
+}
+.l-nav-desktop ul li ul.dropdown li a:hover {
+   font-weight: bold;
+   text-decoration: none;
+}
+.l-nav-desktop ul li a.logo img {
+   position: relative;
+   margin-right: 2em;
+   transition: all $duration $cubicBezier;
+}
+.l-nav-desktop ul li button {
+   display: flex;
+   align-items: center;
+}
+.l-nav-desktop ul li button img {
+   margin-left: 5px;
+   transition: transform $duration $cubicBezier;
+}
+.l-nav-desktop ul li:focus-within img {
+   transform: rotate(-180deg);
+}
+.l-nav-desktop ul li button,
+.l-nav-desktop ul li a:not(.logo, .btn) {
+   padding: 5px 15px;
+}
+.l-nav-desktop ul li:focus-within .dropdown {
+   opacity: 1;
+   transform: translateY(0);
+   visibility: visible;
+}
+.l-nav-desktop ul li button:hover,
+.l-nav-desktop ul li a:not(.logo, .btn):hover {
+   text-decoration: underline;
+}
+
+/*__ Layout-Nav-Responsive __*/
+.l-nav-responsive {
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+}
+.l-nav-responsive .menu {
+   position: absolute;
+   z-index: 999;
+   top: 100px;
+   left: 50%;
+   width: 80%;
+   height: auto;
+   transform: translate3d(-50%, 0, 0) scale(.8);
+   background-color: #fefefe;
+   color: black;
+   border-radius: 10px;
+   @include flexbox(space-between, center, column);
+   padding: 40px;
+   margin-top: 2em;
+   font-size: 1.2em;
+   opacity: 0;
+   transition: all $duration $cubicBezier;
+   max-height: 75vh;
+   overflow-y: scroll;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, .2);
+}
+.l-nav-responsive .menu ul {
+   @include flexbox(center, center, column);
+   width: 100%;
+}
+.l-nav-responsive .menu ul.nav-btn {
+   border-top: 1px solid #dddddd;
+   padding-top: 1em;
+}
+.l-nav-responsive .menu ul li {
+   margin: 0.7em 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+.hamburger {
+   position: relative;
+   width: 35px;
+   height: 20px;
+   cursor: pointer;
+}
+.hamburger .bar {
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   background-color: white;
+   transition: all $duration $cubicBezier;
+}
+.hamburger .bar-top {
+   top: 0;
+   left: 50%;
+   transform: translate3d(-50%, 0, 0);
+}
+.hamburger .bar-middle {
+   top: 50%;
+   left: 50%;
+   transform: translate3d(-50%, -50%, 0);
+}
+.hamburger .bar-bottom {
+   bottom: 0;
+   left: 50%;
+   transform: translate3d(-50%, 0, 0);
+}
+.l-nav-responsive ul li ul.dropdown {
+   padding: 10px;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   background-color: #f1f1f1;
+   color: #505050;
+   border-radius: 5px;
+   opacity: 0;
+   transform: translateY(-15%);
+   visibility: hidden;
+   transition: all $duration $cubicBezier;
+   width: 100% !important;
+   text-align: center;
+}
+.l-nav-responsive ul li ul.dropdown li {
+   line-height: 1;
+}
+.l-nav-responsive ul li ul.dropdown li a:hover {
+   font-weight: bold;
+   text-decoration: none;
+}
+.l-nav-responsive ul li a.logo img {
+   position: relative;
+   margin-right: 2em;
+   transition: all $duration $cubicBezier;
+}
+.l-nav-responsive ul li button {
+   display: flex;
+   align-items: center;
+}
+.l-nav-responsive ul li button img {
+   margin-left: 5px;
+   transition: transform $duration $cubicBezier;
+}
+.l-nav-responsive ul li:focus-within img {
+   transform: rotate(-180deg);
+}
+.l-nav-responsive ul li button,
+.l-nav-responsive ul li a:not(.logo, .btn) {
+   padding: 5px 15px;
+}
+.l-nav-responsive ul li:focus-within .dropdown {
+   display: block;
+   opacity: 1;
+   transform: translateY(5%);
+   visibility: visible;
+}
+.l-nav-responsive ul li button:hover,
+.l-nav-responsive ul li a:not(.logo, .btn):hover {
+   text-decoration: underline;
+}
