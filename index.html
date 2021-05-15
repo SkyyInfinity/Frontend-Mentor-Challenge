@@ -4,36 +4,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="max 156 caractères">
     <meta name="keywords" content="html,css,formation">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.min.css">
+    <script src="https://kit.fontawesome.com/b5fc37325f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Frontend Mentor Challenge</title>
+    <title>Sky Infinity | Frontend Mentor Challenge</title>
 </head>
 
-<body class="scrollbar-dark-theme">
+<body class="scrollbar-light-theme">
     <!-- HEADER -->
     <header id="l-header">
-        <div id="l-constrained">
-            <nav>
-				<ul>
-					<li><a href="/Frontend-Mentor-Challenge/Insure landing page">Insure landing page</a></li>
-					<li><a href="/Frontend-Mentor-Challenge/Blogr landing page">Blogr landing page</a></li>
-				</ul>
+        <div class="l-constrained">
+            <nav role="navigation">
+                <ul class="left" role="list">
+                    <li><a href="javascript:void(0);"><img src="./assets/img/logo.svg" width="200px" alt="Sky Infinity logo"></a></li>
+                </ul>
+				<ul class="right">
+                    <li><span class="follow-me">Follow me :</span></li>
+                    <li><a href="https://github.com/SkyyInfinity" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://codepen.io/SkyInfinity27/" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                    <li><a href="https://twitter.com/SkyInfinity27" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/skyyinfinity/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/dylan-hautecoeur-39344b186/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
 			</nav>
         </div>
     </header>
 
     <!-- CONTENT -->
     <main id="l-content">
-	
+        <div class="l-constrained">
+            <h2 class="page-title">Frontend Mentor Challenge</h2>
+            <p class="page-info">Click on each card for see full page since GitHub Pages.</p>
+            <ul class="cards_list" role="list">
+                <li>
+                    <img src="./assets/img/insurelandingpage.png" alt="Insure preview">
+                    <h3>Insure landing page</h3>
+                    <div class="button">
+                        <a href="/Frontend-Mentor-Challenge/Insure landing page" class="btn btn-primary">See Challenge</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/blogrlandingpage.png" alt="Blogr preview">
+                    <h3>Blogr landing page</h3>
+                    <div class="button">
+                        <a href="/Frontend-Mentor-Challenge/Blogr landing page" class="btn btn-primary">See Challenge</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer id="l-footer">
-        <div id="l-constrained">
+        <div class="l-constrained">
             <div class="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
                 Coded by <a href="https://github.com/SkyyInfinity" target="_blank">Sky Infinity</a>.

@@ -1,0 +1,215 @@
+/* ─────────────────────────────────────────────────────────
+/* ------------------ C S S   S T A R T --------------------
+/* ───────────────────────────────────────────────────────── */
+
+/* ─── IMPORTATION ───────────────────────────────────────── */
+@import url("reset.min.css");
+@import url("scrollbar.css");
+
+/* ─── VARIABLE ──────────────────────────────────────────── */
+$color: red;
+
+/* ─── BASE ──────────────────────────────────────────────── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont,Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    background:
+    radial-gradient(rgba(255, 106, 136, .3) 3px, transparent 4px),
+    radial-gradient(rgba(255, 106, 136, .3) 3px, transparent 4px),
+    linear-gradient(#3b3c4a 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, rgba(255, 106, 136, .3) 75px, rgba(255, 106, 136, .3) 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, rgba(255, 106, 136, .3) 76px, rgba(255, 106, 136, .3) 77px, transparent 78px, transparent 109px),
+    #3b3c4a;
+    background-size: 109px 109px, 109px 109px, 391px 208px, 206px 136px, 144px 148px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    overflow: overlay;
+}
+a {
+    text-decoration: none;
+    color: #0366d6;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+li {
+    list-style: none;
+}
+.button {
+    margin: 3em 0;
+    text-align: center;
+    .btn {
+        padding: 15px 35px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 100px;
+        text-decoration: none;
+        transition: .3s ease-out;
+        &.btn-primary {
+            background-color: #FF9A8B;
+            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+            color: white;
+            &:hover {
+                box-shadow: 0px 0px 30px -5px #FF6A88;
+            }
+        }
+    }
+}
+
+/* ─── LAYOUT ────────────────────────────────────────────── */
+.l-constrained {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+#l-header,
+#l-footer {
+   padding: 1em 0;
+   background-color: #262734;
+   color: white;
+}
+#l-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#l-content {
+    padding-top: 100px;
+}
+
+/* ─── MODULE ────────────────────────────────────────────── */
+nav, nav ul.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul.right {
+    li {
+        position: relative;
+        margin: 0 1em;
+        span.follow-me {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: .8em;
+            letter-spacing: 1px;
+            color: #d5d5d5;
+            cursor: default;
+        }
+    }
+    a {
+        padding: 5px;
+        color: white;
+        font-size: 1.5em;
+        background: -webkit-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s ease-out;
+        &:hover {
+            text-shadow: 0px 0px 20px #FF6A88;
+        }
+    }
+}
+h2.page-title {
+    margin-top: 50px;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+p.page-info {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #d5d5d5;
+}
+ul.cards_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em 0;
+    li {
+        width: calc(50% - 4em);
+        margin: 2em;
+        padding: 4em 3em;
+        border-radius: 1em;
+        background-color: rgba(38, 39, 52, 1);
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, .3);
+        cursor: pointer;
+        transition: .3s ease-out;
+        &:hover {
+            background-color: rgba(38, 39, 52, .6);
+            box-shadow: 0px 0px 60px -5px rgba(0, 0, 0, .3);
+            transform: translateY(-1em);
+        }
+        h3 {
+            margin: 1em 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+}
+.attribution {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8em;
+    letter-spacing: 1px;
+    color: #d5d5d5;
+    a {
+        background: -webkit-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+        transition: .3s ease-out;
+        &:hover {
+            text-shadow: 0px 0px 20px #FF6A88;
+        }
+    }
+}
+
+/* ─── STATE ─────────────────────────────────────────────── */
+
+/* ─── THEME ─────────────────────────────────────────────── */
+
+/* ─── RESPONSIVE ────────────────────────────────────────── */
+@media screen and (max-width: 900px) {
+    ul.cards_list {
+        flex-direction: column;
+        li {
+            width: calc(100% - 4em);
+        }
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul.right {
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width: 480px) {
+    ul.cards_list {
+        li {
+            padding: 2em 1.5em;
+        }
+    }
+    .btn {
+        padding: 7px 10px;
+    }
+}
+
+/* ─────────────────────────────────────────────────────────
+/* ------------------- C S S   E N D -----------------------
+/* ───────────────────────────────────────────────────────── */
