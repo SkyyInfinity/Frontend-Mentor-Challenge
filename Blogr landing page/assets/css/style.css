@@ -141,7 +141,7 @@ h3.section-under-title {
 /* ==|====================
    Layout/Constrained
    ======================= */
-#l-constrained {
+.l-constrained {
   width: 100%;
   max-width: 1440px;
   padding: 0 2em;
