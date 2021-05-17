@@ -200,6 +200,9 @@ ul.cards_list li h3 {
   font-size: 2em;
   text-align: center;
 }
+ul.cards_list li img {
+  width: 100%;
+}
 
 ul.cards_list li a.external-link {
   display: block;
