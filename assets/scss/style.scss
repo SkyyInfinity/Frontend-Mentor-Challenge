@@ -27,6 +27,10 @@ body {
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     overflow: overlay;
 }
+::selection {
+    background-color: #ff6a889f;
+    color: white;
+}
 a {
     text-decoration: none;
     color: #0366d6;
@@ -157,6 +161,15 @@ ul.cards_list {
             font-size: 2em;
             text-align: center;
         }
+        a.external-link {
+            display: block;
+            width: 105px;
+            margin: 2em auto 0 auto;
+            color: #d5d5d5;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 .attribution {
@@ -198,15 +211,28 @@ ul.cards_list {
     nav ul.right {
         margin-top: 1em;
     }
+    li.item-fm {
+        display: none;
+    }
 }
 @media screen and (max-width: 480px) {
     ul.cards_list {
         li {
             padding: 2em 1.5em;
+            margin: 2em 0;
+            width: 100%;
         }
     }
-    .btn {
-        padding: 7px 10px;
+    h2.page-title {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 390px) {
+    .button {
+        .btn {
+            padding: 10px 15px;
+            font-size: 0.9em;
+        }
     }
 }
 
